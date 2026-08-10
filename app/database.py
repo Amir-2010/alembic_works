@@ -21,7 +21,9 @@ class person(Base):
     __tablename__ = "person"
     id = Column(Integer,primary_key=True,autoincrement=True)
     name = Column(String)
-    password = Column(String)
+    
+    def __repr__(self):
+        return f"id={self.id},name={self.name}"
 
 def get_data():
     db = local_session()
