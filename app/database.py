@@ -33,6 +33,7 @@ def get_data():
         db.close()
 
 # work with alembic
+# create folder ==> alembic init alembic
 # add new table ==> alembic revision --autogenerate -m "create table_name table"
 # add new column ==> alembic revision --autogenerate -m "added column_name field"
 
